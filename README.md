@@ -27,3 +27,11 @@ reference a script puts together while the page runs (for example
 
 Serve the folder (e.g. `python3 -m http.server`) and open `Main.dc.html`;
 some browsers block the scripts over file://.
+
+## Product pages (shareable links)
+
+Each product has its own link, e.g. `https://aminedev24.github.io/opuluxeBeauty/p/opb-v01/`,
+with a title, description and preview image for WhatsApp/Facebook. The "Partager" button in the
+product view shares it. After editing `PRODUCTS` in `index.html`, regenerate the pages:
+
+    node tools/build-product-pages.mjs

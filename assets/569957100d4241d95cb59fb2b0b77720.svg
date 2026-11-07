@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#FFFFFF"></stop><stop offset="1" stop-color="#EBE3E6"></stop></radialGradient>
+<radialGradient id="sh" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3A2A22" stop-opacity="0.28"></stop><stop offset="1" stop-color="#3A2A22" stop-opacity="0"></stop></radialGradient>
+<linearGradient id="gold" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#A9843F"></stop><stop offset="0.45" stop-color="#EAD39B"></stop><stop offset="1" stop-color="#9C7836"></stop></linearGradient><linearGradient id="dark" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#1C1617"></stop><stop offset="0.5" stop-color="#4A3D3F"></stop><stop offset="1" stop-color="#1C1617"></stop></linearGradient><linearGradient id="tube" x1="0" x2="1"><stop offset="0" stop-color="#E5DBD7"></stop><stop offset="0.5" stop-color="#FFFFFF"></stop><stop offset="1" stop-color="#DDD2CD"></stop></linearGradient>
+</defs>
+<rect width="600" height="600" fill="url(#bg)"></rect>
+<rect x="0" y="470" width="600" height="130" fill="#EBE3E6" opacity="0.55"></rect>
+<ellipse cx="300" cy="500" rx="110" ry="16" fill="url(#sh)"></ellipse>
+
+<path d="M256 434 L344 434 L374 172 L226 172 Z" fill="url(#tube)"></path>
+<rect x="222" y="150" width="156" height="26" rx="3" fill="#E3D8D3"></rect>
+<path d="M232 156 V170 M244 156 V170 M256 156 V170 M268 156 V170 M280 156 V170 M292 156 V170 M304 156 V170 M316 156 V170 M328 156 V170 M340 156 V170 M352 156 V170 M364 156 V170" stroke="#CFC2BC" stroke-width="2"></path>
+<rect x="247" y="326" width="106" height="24" fill="#E7C9C1"></rect>
+<text x="300" y="262" font-family="Georgia, Times New Roman, serif" text-anchor="middle" font-size="18" letter-spacing="3" fill="#8A6A3A">OPULUXE</text>
+<text x="300" y="290" font-family="Georgia, Times New Roman, serif" text-anchor="middle" font-size="10" letter-spacing="1.5" fill="#8A6A3A">BEURRE DE KARITÉ</text>
+<text x="300" y="307" font-family="Georgia, Times New Roman, serif" text-anchor="middle" font-size="9" letter-spacing="1" fill="#9C8770">CRÈME CORPS</text>
+<text x="300" y="398" font-family="Georgia, Times New Roman, serif" text-anchor="middle" font-size="10" fill="#9C8770">200 ml</text>
+<rect x="252" y="430" width="96" height="70" rx="10" fill="url(#gold)"></rect>
+</svg>

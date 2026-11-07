@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#FFFFFF"></stop><stop offset="1" stop-color="#EEE0D2"></stop></radialGradient>
+<radialGradient id="sh" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3A2A22" stop-opacity="0.28"></stop><stop offset="1" stop-color="#3A2A22" stop-opacity="0"></stop></radialGradient>
+<linearGradient id="gold" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#A9843F"></stop><stop offset="0.45" stop-color="#EAD39B"></stop><stop offset="1" stop-color="#9C7836"></stop></linearGradient><linearGradient id="dark" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#1C1617"></stop><stop offset="0.5" stop-color="#4A3D3F"></stop><stop offset="1" stop-color="#1C1617"></stop></linearGradient><linearGradient id="mirror" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#E4DEDA"></stop><stop offset="0.5" stop-color="#FFFFFF"></stop><stop offset="1" stop-color="#D6CEC9"></stop></linearGradient>
+</defs>
+<rect width="600" height="600" fill="url(#bg)"></rect>
+<rect x="0" y="470" width="600" height="130" fill="#EEE0D2" opacity="0.55"></rect>
+<ellipse cx="300" cy="500" rx="190" ry="16" fill="url(#sh)"></ellipse>
+
+<rect x="130" y="140" width="340" height="190" rx="14" fill="url(#dark)"></rect>
+<rect x="150" y="158" width="300" height="154" rx="8" fill="url(#mirror)"></rect>
+<text x="300" y="244" font-family="Georgia, Times New Roman, serif" text-anchor="middle" font-size="18" letter-spacing="5" fill="#A89A93">OPULUXE</text>
+<rect x="150" y="326" width="300" height="14" rx="3" fill="url(#gold)"></rect>
+<rect x="130" y="338" width="340" height="162" rx="14" fill="url(#dark)"></rect>
+<circle cx="220" cy="380" r="19" fill="#F3D9C8" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="214" cy="373" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse><circle cx="300" cy="380" r="19" fill="#E2B49A" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="294" cy="373" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse><circle cx="380" cy="380" r="19" fill="#C98A6B" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="374" cy="373" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse><circle cx="220" cy="426" r="19" fill="#D7A35B" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="214" cy="419" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse><circle cx="300" cy="426" r="19" fill="#B9823F" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="294" cy="419" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse><circle cx="380" cy="426" r="19" fill="#A0634A" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="374" cy="419" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse><circle cx="220" cy="472" r="19" fill="#8E5A3A" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="214" cy="465" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse><circle cx="300" cy="472" r="19" fill="#7A4535" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="294" cy="465" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse><circle cx="380" cy="472" r="19" fill="#5A3A2E" stroke="#B8924F" stroke-width="2"></circle><ellipse cx="374" cy="465" rx="6" ry="3" fill="#FFFFFF" opacity="0.35"></ellipse>
+</svg>

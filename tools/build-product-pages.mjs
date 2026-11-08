@@ -25,22 +25,22 @@ const chromium = ['chromium', 'chromium-browser', 'google-chrome'].find(bin => {
 });
 if (!chromium) console.warn('! No chromium found: pages are built without share.png preview images.');
 
-const FONTS = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;600&display=swap';
+const FONTS = 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap';
 
 function shareCard(p, cat) {
   const off = p.was ? Math.round((1 - p.price / p.was) * 100) : 0;
   return `<!doctype html><html><head><meta charset="utf-8"><link href="${FONTS}" rel="stylesheet"><style>
-*{box-sizing:border-box}body{margin:0;width:1200px;height:630px;display:flex;background:#FBF7F4;font-family:Jost,sans-serif;color:#2B1F1D}
-.img{width:630px;height:630px;flex:none}.img img{width:100%;height:100%;display:block}
-.txt{flex:1;padding:70px 64px;display:flex;flex-direction:column;justify-content:center;gap:18px;border-left:1px solid #E8D8D1}
-.brand{font:600 34px Cormorant Garamond,serif;color:#9A5A50;letter-spacing:.04em}
-.cat{font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:#9A5A50;font-weight:600}
-h1{font:500 58px/1.02 Cormorant Garamond,serif;margin:0}
-.price{font-size:36px;font-weight:600}.was{font-size:22px;color:#735F5B;text-decoration:line-through;margin-left:12px;font-weight:400}
-.off{display:inline-block;background:#9A5A50;color:#fff;font-size:16px;font-weight:600;padding:5px 12px;border-radius:99px;margin-left:12px;vertical-align:middle}
-.cta{margin-top:10px;align-self:flex-start;background:#9A5A50;color:#fff;font-size:18px;font-weight:600;padding:14px 26px;border-radius:99px}
-</style></head><body><div class="img"><img src="${p.img}"></div><div class="txt">
-<div class="brand">${esc(STORE_NAME)}</div><div class="cat">${esc(cat.fr)}</div><h1>${esc(p.fr[0])}</h1>
+*{box-sizing:border-box}body{margin:0;width:1200px;height:630px;display:flex;background:#fff;font-family:Poppins,sans-serif;color:#222529}
+.img{width:630px;height:630px;flex:none;background:#f4f4f4}.img img{width:100%;height:100%;display:block}
+.txt{flex:1;padding:70px 64px;display:flex;flex-direction:column;justify-content:center;gap:16px;background:linear-gradient(115deg,#f7d6e4,#fbe9f1)}
+.brand{font-size:34px;font-weight:600;color:#ff99cc}.brand span{color:#222529}
+.cat{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:#777;font-weight:600}
+h1{font:italic 700 52px/1.08 Poppins,sans-serif;margin:0}
+.price{font-size:34px;font-weight:600}.was{font-size:20px;color:#999;text-decoration:line-through;margin-left:12px;font-weight:400}
+.off{display:inline-block;background:#c93a7d;color:#fff;font-size:15px;font-weight:600;padding:4px 10px;border-radius:2px;margin-left:12px;vertical-align:middle}
+.cta{margin-top:10px;align-self:flex-start;background:#222529;color:#fff;font-size:15px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;padding:16px 28px}
+</style></head><body><div class="img"><img src="${pathToFileURL(join(ROOT, p.img)).href}"></div><div class="txt">
+<div class="brand">${esc(STORE_NAME.replace('Beauty', ''))}<span>Beauty</span></div><div class="cat">${esc(cat.fr)}</div><h1>${esc(p.fr[0])}</h1>
 <div class="price">${money(p.price)}${p.was ? `<span class="was">${money(p.was)}</span><span class="off">−${off}%</span>` : ''}</div>
 <div class="cta">Commander sur WhatsApp</div></div></body></html>`;
 }
@@ -72,10 +72,10 @@ ${hasImage ? `<meta property="og:image" content="${url}share.png">
 <meta name="twitter:card" content="summary_large_image">` : '<meta name="twitter:card" content="summary">'}
 <meta property="product:price:amount" content="${p.price}">
 <meta property="product:price:currency" content="DZD">
-<meta name="theme-color" content="#9a5a50">
+<meta name="theme-color" content="#222529">
 <meta http-equiv="refresh" content="0; url=${target}">
 <script>location.replace(${JSON.stringify(target)})</script>
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#FBF7F4;color:#2B1F1D;font-family:system-ui,sans-serif;text-align:center;padding:24px;box-sizing:border-box}img{width:100%;max-width:520px;border-radius:14px}h1{font-family:Georgia,serif;font-weight:500}a{display:inline-block;background:#9A5A50;color:#fff;padding:12px 22px;border-radius:99px;text-decoration:none;font-weight:600}</style>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#fff;color:#222529;font-family:system-ui,sans-serif;text-align:center;padding:24px;box-sizing:border-box}img{width:100%;max-width:520px}h1{font-style:italic}a{display:inline-block;background:#222529;color:#fff;padding:12px 22px;text-decoration:none;font-weight:600;text-transform:uppercase;letter-spacing:.1em}</style>
 </head>
 <body><main>${hasImage ? `<img src="share.png" alt="${esc(p.fr[0])}">` : ''}<h1>${esc(p.fr[0])}</h1><p>${esc(cat.fr)} · ${money(p.price)}</p><a href="${target}">Voir le produit</a></main></body>
 </html>

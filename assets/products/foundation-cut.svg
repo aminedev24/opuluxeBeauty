@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#FFFFFF"></stop><stop offset="1" stop-color="#EFE1D3"></stop></radialGradient>
+<radialGradient id="sh" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3A2A22" stop-opacity="0.28"></stop><stop offset="1" stop-color="#3A2A22" stop-opacity="0"></stop></radialGradient>
+<linearGradient id="gold" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#A9843F"></stop><stop offset="0.45" stop-color="#EAD39B"></stop><stop offset="1" stop-color="#9C7836"></stop></linearGradient><linearGradient id="dark" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#1C1617"></stop><stop offset="0.5" stop-color="#4A3D3F"></stop><stop offset="1" stop-color="#1C1617"></stop></linearGradient><linearGradient id="glass" x1="0" x2="1"><stop offset="0" stop-color="#DCD1C7"></stop><stop offset="0.5" stop-color="#FFFFFF"></stop><stop offset="1" stop-color="#D3C7BC"></stop></linearGradient><linearGradient id="beige" x1="0" x2="1"><stop offset="0" stop-color="#C99470"></stop><stop offset="0.5" stop-color="#E8C1A0"></stop><stop offset="1" stop-color="#BF8A66"></stop></linearGradient>
+</defs>
+
+
+<ellipse cx="300" cy="500" rx="115" ry="16" fill="url(#sh)"></ellipse>
+
+<rect x="258" y="174" width="84" height="42" rx="6" fill="url(#dark)"></rect>
+<rect x="340" y="186" width="42" height="12" rx="5" fill="#2B2324"></rect>
+<rect x="268" y="214" width="64" height="40" rx="4" fill="url(#gold)"></rect>
+<rect x="225" y="250" width="150" height="250" rx="16" fill="url(#glass)"></rect>
+<rect x="237" y="296" width="126" height="192" rx="9" fill="url(#beige)"></rect>
+<rect x="245" y="268" width="10" height="200" rx="5.0" fill="#FFFFFF" opacity="0.35"></rect>
+<text x="300" y="376" font-family="Georgia, Times New Roman, serif" text-anchor="middle" font-size="16" letter-spacing="3" fill="#FFFFFF">OPULUXE</text>
+<text x="300" y="400" font-family="Georgia, Times New Roman, serif" text-anchor="middle" font-size="10" letter-spacing="1.5" fill="#FFFFFF">FOND DE TEINT</text>
+<text x="300" y="420" font-family="Georgia, Times New Roman, serif" text-anchor="middle" font-size="10" fill="#FFFFFF">30 ml</text>
+</svg>

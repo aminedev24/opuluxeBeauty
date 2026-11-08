@@ -1,44 +1,42 @@
-# OpuluxeBeauty – landing page (FR AR) — design reference
+# OpuluxeBeauty
 
-This is a design mockup created in a visual design tool, exported as a
-standalone page. Treat it as a REFERENCE MOCKUP, not production code:
-the markup and inline styles carry the design's precise values — colors,
-font sizes, spacing, radii, shadows, layout — which an implementation
-should replicate faithfully in its own components and styling system
-rather than copy wholesale.
+Bilingual (French / Arabic) beauty shop page. Orders go through WhatsApp; there is no cart or checkout.
+Live at https://aminedev24.github.io/opuluxeBeauty/
 
-## Contents
+## Files
 
-- `Main.dc.html` — the artboard (a Design Component: an `<x-dc>`
-  template + a small logic class). The values to replicate live in its
-  inline `style="…"` attributes and the `<helmet><style>` block.
-- `assets/` — files uploaded to the design (images, fonts, media)
-- `support.js`, `vendor/react*.js` — the runtime that renders the
-  component in a browser; not part of the design.
+- `index.html` — the whole site: styles, markup, product data and script.
+- `assets/products/` — product drawings (`<name>.svg`) and the same drawings without background (`<name>-cut.svg`), used in the banners and category tiles.
+- `p/<ref>/` — one shareable page per product (generated, see below).
+- `tools/build-product-pages.mjs` — generates `p/`.
 
-## Uploaded files
+## Before launch
 
-Images, fonts and media uploaded to the design are written once each under
-`assets/` — 8 in this export — and the exported files refer to them there. A
-reference a script puts together while the page runs (for example
-`"/_blob/" + id`) is not rewritten and does not load from this folder.
+In `index.html`, replace the placeholders:
 
-## Viewing
+- `WHATSAPP_NUMBER` — country code, no `+` (e.g. `213555123456`).
+- `SOCIAL` — Instagram / Facebook / TikTok links; empty ones are hidden.
+- In `T` (French and Arabic texts): `[ZONES DE LIVRAISON]`, `[DÉLAI]`, `[ADRESSE DE LA BOUTIQUE]`, `[JOURS] · [HEURES]`.
 
-Serve the folder (e.g. `python3 -m http.server`) and open `Main.dc.html`;
-some browsers block the scripts over file://.
+## Products
 
-## Product pages (shareable links)
-
-Each product has its own link, e.g. `https://aminedev24.github.io/opuluxeBeauty/p/opb-v01/`,
-with a title, description and preview image for WhatsApp/Facebook. The "Partager" button in the
-product view shares it. After editing `PRODUCTS` in `index.html`, regenerate the pages:
+Products live in `PRODUCTS` in `index.html`. `was` is the old price (shows a discount badge and puts the
+product in the promo slide/tab), `tag:'new'` marks a new product. After editing products, regenerate the
+shareable pages and push:
 
     node tools/build-product-pages.mjs
 
+Each product then has its own link, e.g. `https://aminedev24.github.io/opuluxeBeauty/p/opb-v01/`, with a
+preview image for WhatsApp/Facebook.
+
 ## Hero slider
 
-The hero rotates through the slides in `SLIDES` (in `index.html`): the main slide, a promo slide
-(shown while any product has a `was` price, with the biggest discount filled in automatically) and
-a new-arrivals slide (while any product has `tag:'new'`). Ramadan and Eid slides appear on their own
-each year, using the Islamic calendar. Preview them any day with `?season=ramadan` or `?season=eid`.
+The banners come from `SLIDES`: the main slide, a promo slide (while any product has a `was` price, with the
+biggest discount filled in) and a new-arrivals slide (while any product is `tag:'new'`). Ramadan and Eid slides
+appear on their own each year using the Islamic calendar; preview them with `?season=ramadan` or `?season=eid`.
+
+## Viewing locally
+
+    python3 -m http.server
+
+then open http://localhost:8000/.

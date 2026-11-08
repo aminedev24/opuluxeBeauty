@@ -40,3 +40,10 @@ appear on their own each year using the Islamic calendar; preview them with `?se
     python3 -m http.server
 
 then open http://localhost:8000/.
+
+## Second version (`v2/`)
+
+`v2/index.html` is an alternative design of the same shop (light gray background, category list beside
+the slider, product rows with "Plus de produits", floating WhatsApp button), live at
+https://aminedev24.github.io/opuluxeBeauty/v2/. It has its own copy of the products and texts, so
+edit both files when products change. Product share links point to the shared `p/` pages.

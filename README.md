@@ -35,3 +35,10 @@ with a title, description and preview image for WhatsApp/Facebook. The "Partager
 product view shares it. After editing `PRODUCTS` in `index.html`, regenerate the pages:
 
     node tools/build-product-pages.mjs
+
+## Hero slider
+
+The hero rotates through the slides in `SLIDES` (in `index.html`): the main slide, a promo slide
+(shown while any product has a `was` price, with the biggest discount filled in automatically) and
+a new-arrivals slide (while any product has `tag:'new'`). Ramadan and Eid slides appear on their own
+each year, using the Islamic calendar. Preview them any day with `?season=ramadan` or `?season=eid`.

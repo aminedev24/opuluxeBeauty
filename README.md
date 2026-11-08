@@ -53,3 +53,9 @@ edit both files when products change. Product share links point to the shared `p
 `original/index.html` is the first rose-coloured design (from the design tool, with the mobile fixes and the
 arch-style hero slider), kept for comparison at https://aminedev24.github.io/opuluxeBeauty/original/.
 It is self-contained (images are embedded) and also has its own copy of the products.
+
+## Third version (`v3/`)
+
+`v3/index.html` is a colourful, playful design (turquoise wavy bar, cream search, coral promo tags,
+poster cards beside product rows, coloured bands with leaf patterns), live at
+https://aminedev24.github.io/opuluxeBeauty/v3/. Like `v2/`, it has its own copy of the products.
